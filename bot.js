@@ -1,14 +1,14 @@
 ﻿const Discord = require('discord.js');
 const client = new Discord.Client();
-const prefix = "-";
+const prefix = "1";
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);  
 });
 
 client.on('ready', async() => {
-var server = "512169559302733825"; // ايدي السررفر
-var channel = "512170058806722560";//ايدي الروم
+var server = "509350486760226818"; // ايدي السررفر
+var channel = "509350486760226820";//ايدي الروم
     setInterval(()=>{
     client.guilds.get(server).channels.get(channel).send('**Dream , Dream , Dream , Dream , Dream , Dream , Dream , Dream , Dream , Dream , Dream , Dream , Dream , Dream , Dream , Dream , Dream , Dream , **')
     },305);
@@ -33,7 +33,7 @@ if(!message.member.hasPermission('ADMINISTRATOR')) return message.channel.send('
  
   
   client.on('message', message => {
-        var prefix = "-";
+        var prefix = "1";
         if (message.author.bot) return;
         if (!message.content.startsWith(prefix)) return;
       
@@ -44,7 +44,7 @@ if(!message.member.hasPermission('ADMINISTRATOR')) return message.channel.send('
       let args = message.content.split(" ").slice(1);
       let x = args.join(" ")
         if(message.content.startsWith(prefix + 'say')) {
-            message.channel.send(''+x);
+            message.channel.send('');
                 message.delete(999)
         }
         
